@@ -41,19 +41,38 @@ header a {
   font-size: 1.5rem;
   color: var(--off-white);
   transition: transform 250ms;
+  will-change: transform;
+  /* animation-duration: 3s;
+  animation-name: header; */
 }
+
+/* @keyframes header {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+} */
 
 header a:hover {
   transform: translateY(-10px);
-  background-color: #ebdd9d;
-  color: #042d2f;
-  padding: auto;
 }
+
 /* end header link animations */
 
 /* article link transitions */
 main a {
   color: var(--danger-color);
+  transition: transform 250ms;
+  will-change: transform;
+}
+
+main a:hover {
+  transform: translateY(-5px);
 }
 
 /* end article link transitions */
@@ -112,6 +131,32 @@ section.hero>button {
   border-radius: 12px;
   text-transform: uppercase;
   cursor: pointer;
+  animation-duration: 3s;
+  animation-name: hero-button;
+  transition: transform 250ms;
+  will-change: transform;
+}
+
+@keyframes hero-button {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+section.hero>button:hover {
+  background-color: #06b3bc;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  box-shadow: #042d2f 0 4px 8px 0;
+  cursor: pointer;
+  transform: translateY(-10px);
 }
 
 main article {
