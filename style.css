@@ -60,6 +60,7 @@ header a {
 
 header a:hover {
   transform: translateY(5px);
+  text-shadow: 2px 2px 7px rgb(57, 57, 57);
 }
 
 /* end header link animations */
