@@ -48,12 +48,12 @@ header a {
 
 /* @keyframes header {
   from {
-    margin-left: 100%;
+    margin-bottom: 100%;
     width: 300%;
   }
 
   to {
-    margin-left: 0%;
+    margin-bottom: 0%;
     width: 100%;
   }
 } */
@@ -71,7 +71,19 @@ main a {
 }
 
 main a:hover {
-  background-color: rgb(255, 255, 211);
+  background-color: rgb(248, 248, 160);
+  animation-name: link-hover;
+  animation-duration: 3s;
+}
+
+@keyframes link-hover {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100%;
+  }
 }
 
 /* end article link transitions */
